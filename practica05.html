@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 04</title>
+    <title>Practica 05</title>
     <style>
         img{
             box-shadow: 5px 10px 20px red ;
-               
+            /* border-radius: 10% 40%;       */
         }
         figure{
             text-align: center;
             width: 300px; 
             display: inline-block;
+        }
+        .redonda{
+            border-radius: 100px;
         }
     </style>
 </head>
@@ -35,6 +38,8 @@
 
     <script>
         const app=document.getElementById("app");
+        /*GUARDA TODA LA LISTA DE LOS ELEMENTOS QUE TENGAN LA ETIQUETA IMG*/
+
         const url="https://picsum.photos/id/";
         const size="/200/200";
         const picture=(parametros, nombre)=>{
@@ -49,7 +54,21 @@
             
         }
         app.innerHTML=picture({id:"4",nombre:"Cristiano Ronaldo"});
-        
+        app.innerHTML+=picture({id:"9",nombre:"Cristiano Ronaldo"});
+
+        /*!EVENTOS*/
+        const lista=document.querySelectorAll("img");
+        /*for(let i=0;i<lista.length;i++){
+            lista[i].addEventListener("click",(e)=>{
+                lista[i].style.borderRadius="100px";
+            })
+        }*/
+
+        lista.forEach((elemento)=>{
+            elemento.addEventListener("click",(e)=>{
+                elemento.classList.toggle("redonda");
+            })
+        })
     </script>
 </body>
 </html>
