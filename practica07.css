@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+form{
+    width: 30%;
+    height: auto;
+    margin: 1% 30%;
+    border-radius: 10px;
+    border:1px solid gray;
+    /* background-color: red; */
+    box-shadow: 18px 20px 20px black;
+}
+legend{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    width: 85%;
+    height: 14em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:4%;
+}
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-top: 12px;
+}
+.input{
+    width: 99%;
+    display: block;
+    height: 3em;
+    /* margin-bottom: px; */
+    margin-top:10px;
+}
+#btnEnvia{
+background-color: blue;
+color: white;
+width: 95%;
+margin-left: 2%;
+border-radius: 10px;
+height: 3em;
+font-size: 1.1em;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 4%;
+}
