@@ -1,4 +1,6 @@
 
+import './MiFieldSet.css'
+
 function MiFieldSet(prompt){
     const {titulo,txt1,txt2}=prompt;
 return (
@@ -9,7 +11,7 @@ return (
         <input type="text" id={txt1}/>
 
         <label htmlFor={txt2}>{txt2}:</label>
-        <input type="text" id={txt2}/>
+        <input type="password" id={txt2}/>
     </fieldset>
     </>
 )
