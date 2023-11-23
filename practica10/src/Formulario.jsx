@@ -10,9 +10,13 @@ function Formulario() {
             password:''
         }
     );
+                //! SE LE HACE EL PASO DE PARAMETROS A LA RUTA DE LA PETICIÓN
     const hacerPeticion= async ()=>{
         try{
-            const respuesta=await axios.get('http://localhost:4567/ruta3');
+            
+            const respuesta=await axios.post('http://localhost:4567/ruta2', datosFormulario);
+            //!ESTA  ES LA ESTRUCUTRA PARA LOS DATOS POR EL METDOO GET, CON PARAMS
+            // const respuesta=await axios.get('http://localhost:4567/ruta2',{params:  datosFormulario});
             console.log(respuesta.data);
             return respuesta.data; //! DATA ES UN OBJETO 
         }catch(error){
